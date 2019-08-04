@@ -18,6 +18,7 @@
           fbjung-vue 임.
         </h1>
         <h2>
+          두 개 url 사용가능 <br>
           https://fbjung-vue.web.app/  <br>
           https://fbjung-vue.firebaseapp.com/
         </h2>
