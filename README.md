@@ -1,4 +1,4 @@
-# vue_jung
+# fbjung-vue
 
 ## Project setup
 ```
