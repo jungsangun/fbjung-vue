@@ -15,10 +15,10 @@
 
       <v-flex mb-4>
         <h1 class="display-2 font-weight-bold mb-3">
-          fbjung-vue 임.
+          fbjung-vue 임. /home
         </h1>
         <h2>
-          두 개 url 사용가능 <br>
+          두 개 url 사용가능함 <br>
           https://fbjung-vue.web.app/  <br>
           https://fbjung-vue.firebaseapp.com/
         </h2>
