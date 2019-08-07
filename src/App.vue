@@ -3,12 +3,15 @@
     <!-- 여기부터 네비게이션 드로워 ********************************************-->
     <v-navigation-drawer v-model="drawer" fixed app>
       <v-list>
-        <v-list-item link to="/">
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
-        </v-list-item>
+        <!-- <v-container> -->
+          <v-list-item link to="/">
+              <v-list-item-icon>
+                <v-icon>mdi-home</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+          
+        <!-- </v-container> -->
         <v-list-group
           v-for="item in items"
           :key="item.title"
@@ -45,7 +48,7 @@
     >
       <v-app-bar-nav-icon @click="test()"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>페이지 타이틀</v-toolbar-title>
+      <v-toolbar-title>앱바내 툴바 타이틀</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -87,11 +90,11 @@ export default {
         items: [
           {
             icon: 'mdi-beer',
-            title: 'About 메뉴다',
+            title: 'About 메뉴',
             items: [
-              { title: '날짜비교', to: '/about1' },
-              { title: 'about2', to: '/about2' },
-              { title: '캘린더', to: '/about3' },
+              { title: '1. 날짜비교', to: '/about1' },
+              { title: '2. v-flex', to: '/about2' },
+              { title: '3. 캘린더', to: '/about3' },
             ]
           },
           {
