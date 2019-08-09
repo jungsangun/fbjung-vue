@@ -47,7 +47,7 @@
     >
       <v-app-bar-nav-icon @click="test()"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>앱바내 툴바 타이틀 2019-08-08 19:00</v-toolbar-title>
+      <v-toolbar-title>앱바내 툴바 타이틀 2019-08-09 09:50</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
