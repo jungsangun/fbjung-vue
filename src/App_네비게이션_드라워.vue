@@ -33,7 +33,7 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    
+
     <!-- 여기부터 네비게이션 드로워 ********************************************-->
     <v-navigation-drawer v-model="drawer" fixed app>
       <v-list-item>
@@ -69,7 +69,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-        
+
     <!-- 여기부터 컨텐츠 ********************************************-->
     <v-content>
       <!-- <HelloWorld/> --> <!-- 이건 아래 script 부분에서 HelloWorld 를 임포트 했을 때 -->
@@ -81,22 +81,22 @@
 <script>
 export default {
   name: 'App',
-  data () {
-      return {
-        items: [
-          { title: 'Home', icon: 'mdi-view-dashboard', to: '/' },
-          { title: 'About', icon: 'mdi-image', to: '/about' },
-          { title: 'About2', icon: 'mdi-help-box', to: 'about2' },
-        ],
-        right: null,
-        drawer: false
-      }
-    },
+  data() {
+    return {
+      items: [
+        {title: 'Home', icon: 'mdi-view-dashboard', to: '/'},
+        {title: 'About', icon: 'mdi-image', to: '/about'},
+        {title: 'About2', icon: 'mdi-help-box', to: 'about2'},
+      ],
+      right: null,
+      drawer: false,
+    };
+  },
   methods: {
     // test: function(event){
-    test: function () {
-      this.drawer = !this.drawer 
-    }
-  }
+    test: function() {
+      this.drawer = !this.drawer;
+    },
+  },
 };
 </script>

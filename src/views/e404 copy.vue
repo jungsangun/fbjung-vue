@@ -31,5 +31,5 @@
 </template>
 
 <script>
-  // 
+//
 </script>

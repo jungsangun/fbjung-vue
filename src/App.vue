@@ -1,5 +1,5 @@
 <template>
-  <v-app>    
+  <v-app>
     <!-- 여기부터 네비게이션 드로워 ********************************************-->
     <v-navigation-drawer v-model="drawer" fixed app>
       <v-list>
@@ -10,7 +10,7 @@
               </v-list-item-icon>
               <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
-          
+
         <!-- </v-container> -->
         <v-list-group
           v-for="item in items"
@@ -28,7 +28,6 @@
           <v-list-item
             v-for="subItem in item.items"
             :key="subItem.title"
-            @click=""
             link
             :to="subItem.to"
           >
@@ -39,7 +38,7 @@
         </v-list-group>
       </v-list>
     </v-navigation-drawer>
-    
+
     <!-- 여기부터 앱바 ********************************************-->
     <v-app-bar
       color="deep-purple accent-4"
@@ -48,7 +47,7 @@
     >
       <v-app-bar-nav-icon @click="test()"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>앱바내 툴바 타이틀</v-toolbar-title>
+      <v-toolbar-title>앱바내 툴바 타이틀 2019-08-08 19:00</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -73,7 +72,7 @@
         </v-list>
       </v-menu>
     </v-app-bar>
-    
+
     <!-- 여기부터 컨텐츠 ********************************************-->
     <v-content>
       <!-- <HelloWorld/> --> <!-- 이건 아래 script 부분에서 HelloWorld 를 임포트 했을 때 -->
@@ -85,48 +84,49 @@
 <script>
 export default {
   name: 'App',
-  data () {
-      return {
-        items: [
-          {
-            icon: 'mdi-beer',
-            title: 'About 메뉴',
-            items: [
-              { title: '1. 날짜비교', to: '/about1' },
-              { title: '2. v-flex', to: '/about2' },
-              { title: '3. 캘린더', to: '/about3' },
-            ]
-          },
-          {
-            icon: 'mdi-silverware-fork-knife',
-            title: 'Dining 메뉴',
-            active: true,
-            items: [
-              { title: 'about2', to: '/about2' },
-              { title: 'about1', to: '/about1' },
-            ],
-          },
-          {
-            icon: 'mdi-school',
-            title: 'Education',
-            items: [
-              { title: 'List Item' },
-            ],
-          },
-          {
-            icon: 'mdi-account-badge',
-            title: 'Promotions',
-            // items: [],
-          },
-        ],
-        drawer: false
-      }
-    },
+  data() {
+    return {
+      items: [
+        {
+          icon: 'mdi-beer',
+          title: '실험실',
+          items: [
+            {title: '1. 날짜비교', to: '/about1'},
+            {title: '2. v-flex', to: '/about2'},
+            {title: '3. 캘린더', to: '/about3'},
+            {title: '4. Grids내의 input+button', to: '/about4'},
+          ],
+        },
+        {
+          icon: 'mdi-silverware-fork-knife',
+          title: 'Dining 메뉴',
+          active: true,
+          items: [
+            {title: 'about2', to: '/about2'},
+            {title: 'about1', to: '/about1'},
+          ],
+        },
+        {
+          icon: 'mdi-school',
+          title: 'Education',
+          items: [
+            {title: 'List Item'},
+          ],
+        },
+        {
+          icon: 'mdi-account-badge',
+          title: 'Promotions',
+          // items: [],
+        },
+      ],
+      drawer: false,
+    };
+  },
   methods: {
     // test: function(event){
-    test: function () {
-      this.drawer = !this.drawer 
-    }
-  }
+    test: function() {
+      this.drawer = !this.drawer;
+    },
+  },
 };
 </script>

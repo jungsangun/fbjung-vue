@@ -33,6 +33,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About3.vue')
     },
     {
+      path: '/about4',
+      name: 'about4',
+      component: () => import(/* webpackChunkName: "about" */ './views/About4.vue')
+    },
+    {
       path: '*',
       name: 'e404',
       component: () => import('./views/e404.vue')

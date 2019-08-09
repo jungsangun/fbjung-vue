@@ -7,7 +7,7 @@
     </v-toolbar> -->
 
     <v-card color="teal" dark>
-        <span class="title">2. v-flex</span>  
+        <span class="title">2. v-flex</span>
     </v-card>
 
     <v-layout column ma-5>
@@ -19,7 +19,7 @@
       </v-flex>
       <v-flex>
       </v-flex>
-      
-    </v-layout>    
+
+    </v-layout>
   </v-container>
 </template>
